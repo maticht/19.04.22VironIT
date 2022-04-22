@@ -10,6 +10,10 @@ const User = new Schema({
     password: {
         type: String,
         required: true
+    },
+    fileSrc: {
+        type: String,
+        default: ''
     }
 })
 module.exports = mongoose.model('user', User)
